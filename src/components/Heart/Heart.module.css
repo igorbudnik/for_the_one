@@ -1,0 +1,23 @@
+.wrapper {
+  cursor: pointer;
+  transition: transform 0.25s ease;
+  position: relative;
+  z-index: 1000;
+}
+
+.wrapper:hover {
+  transform: scale(1.06) rotate(var(--angle));
+}
+
+.svg {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.border {
+  fill: none;
+  stroke: #ff002f;
+  stroke-width: 1;
+  stroke-linejoin: round;
+}

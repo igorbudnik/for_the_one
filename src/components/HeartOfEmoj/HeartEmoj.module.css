@@ -1,0 +1,34 @@
+@font-face {
+  font-family: "FriendlySans";
+  src: url("../Button/Sigmar-Regular.otf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+.heartGrid {
+  position: absolute;
+  left: 0;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  font-family: "FriendlySans";
+}
+
+.heartCell {
+  width: 1.6rem;
+  height: 1.6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.4rem;
+  opacity: 0;
+  transform: scale(0.3);
+  transition:
+    opacity 0.4s ease,
+    transform 0.4s cubic-bezier(0.2, 1.4, 0.4, 1);
+}
+
+.visible {
+  opacity: 1;
+  transform: scale(1);
+}

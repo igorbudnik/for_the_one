@@ -1,0 +1,107 @@
+@font-face {
+  font-family: "FriendlySans";
+  src: url("./Sigmar-Regular.otf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+.button_no {
+  font-family: "FriendlySans";
+  /* height: 45px;
+  width: 100px; */
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  border: 3px solid rgb(255, 172, 172);
+
+  transition: 1s;
+  background-color: rgb(255, 228, 228);
+  position: relative;
+  z-index: 10000;
+
+  font-style: normal;
+  font-weight: 500;
+  line-height: 143%;
+  display: flex;
+  align-items: center;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.button_yes {
+  font-family: "FriendlySans";
+  /* height: 45px;
+  width: 224px; */
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  border: 3px solid rgb(255, 172, 172);
+  /* margin: 10px; */
+  transition: 1s;
+  background-color: rgb(255, 228, 228);
+  position: relative;
+  z-index: 10000;
+
+  font-style: normal;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 143%;
+  display: flex;
+  align-items: center;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.content {
+  position: absolute;
+  z-index: 1000;
+  /* font-size: 35px; */
+}
+
+.button_yes:hover {
+  background: -webkit-linear-gradient(
+    45deg,
+    rgb(255, 255, 255),
+    rgb(255, 241, 238) 84%
+  );
+  background: -moz-linear-gradient(
+    45deg,
+    rgb(255, 255, 255),
+    rgb(255, 241, 238) 84%
+  );
+  background: linear-gradient(
+    45deg,
+    rgb(255, 255, 255),
+    rgb(255, 241, 238) 84%
+  );
+  transition: 0.9s;
+  cursor: pointer;
+  -webkit-box-shadow: 7px 7px 70px 0px rgba(255, 13, 13, 0.2) inset;
+  -moz-box-shadow: 7px 7px 70px 0px rgba(255, 13, 13, 0.2) inset;
+  box-shadow: 7px 7px 70px 0px rgba(255, 13, 13, 0.2) inset;
+}
+
+.button_no:hover {
+  background: -webkit-linear-gradient(
+    45deg,
+    rgb(255, 255, 255),
+    rgb(255, 241, 238) 84%
+  );
+  background: -moz-linear-gradient(
+    45deg,
+    rgb(255, 255, 255),
+    rgb(255, 241, 238) 84%
+  );
+  background: linear-gradient(
+    45deg,
+    rgb(255, 255, 255),
+    rgb(255, 241, 238) 84%
+  );
+  transition: 0.9s;
+  cursor: pointer;
+  -webkit-box-shadow: 7px 7px 70px 0px rgba(255, 13, 13, 0.2) inset;
+  -moz-box-shadow: 7px 7px 70px 0px rgba(255, 13, 13, 0.2) inset;
+  box-shadow: 7px 7px 70px 0px rgba(255, 13, 13, 0.2) inset;
+}
