@@ -1,16 +1,16 @@
 import "./App.css";
 import Main from "./pages/Main";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
 import Valentine from "./pages/Valentine";
 
 function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <Routes>
         <Route path="/" element={<Main />} />
         <Route path="/valentine" element={<Valentine />} />
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
 
     // <Main />
   );
