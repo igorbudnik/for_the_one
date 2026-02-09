@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/igorbudnik.github.io/for_the_one/static/css/main.3b035773.css",
+    "main.js": "/igorbudnik.github.io/for_the_one/static/js/main.2fb67316.js",
+    "static/js/453.dde76d10.chunk.js": "/igorbudnik.github.io/for_the_one/static/js/453.dde76d10.chunk.js",
+    "static/media/Sigmar-Regular.otf": "/igorbudnik.github.io/for_the_one/static/media/Sigmar-Regular.db901cf60531d941f953.otf",
+    "static/media/murzik.jpg": "/igorbudnik.github.io/for_the_one/static/media/murzik.d76ca03dd788691cb5c0.jpg",
+    "static/media/me.jpg": "/igorbudnik.github.io/for_the_one/static/media/me.79fe4b181e3572ee54b4.jpg",
+    "static/media/luna.jpg": "/igorbudnik.github.io/for_the_one/static/media/luna.c3d8cf5893adb573b4e5.jpg",
+    "static/media/mimi.jpg": "/igorbudnik.github.io/for_the_one/static/media/mimi.81c5840f0384e67aca90.jpg",
+    "static/media/fire3.png": "/igorbudnik.github.io/for_the_one/static/media/fire3.0be45365389041707489.png",
+    "static/media/fire2.png": "/igorbudnik.github.io/for_the_one/static/media/fire2.79d06477d56d90cb1c57.png",
+    "static/media/fire1.png": "/igorbudnik.github.io/for_the_one/static/media/fire1.3aef9820b4646ccb3d88.png",
+    "static/media/dino.jpg": "/igorbudnik.github.io/for_the_one/static/media/dino.a341ef9f4bb0ac7819db.jpg",
+    "index.html": "/igorbudnik.github.io/for_the_one/index.html",
+    "main.3b035773.css.map": "/igorbudnik.github.io/for_the_one/static/css/main.3b035773.css.map",
+    "main.2fb67316.js.map": "/igorbudnik.github.io/for_the_one/static/js/main.2fb67316.js.map",
+    "453.dde76d10.chunk.js.map": "/igorbudnik.github.io/for_the_one/static/js/453.dde76d10.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3b035773.css",
+    "static/js/main.2fb67316.js"
+  ]
+}
