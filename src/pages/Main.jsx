@@ -9,6 +9,10 @@ import murzik from "../photos/murzik.jpg";
 import luna from "../photos/luna.jpg";
 import mimi from "../photos/mimi.jpg";
 import dino from "../photos/dino.jpg";
+import ears from "../photos/ears.png";
+import paw from "../photos/paw.png";
+import rom from "../photos/rom.png";
+import rose from "../photos/rose.png";
 
 const coords = [
   { x: 400, y: 50 },
@@ -24,6 +28,8 @@ const initialAngles = [15, 10, -11, -25];
 function Main() {
   const navigate = useNavigate();
   const [showText, setShowText] = useState(false);
+  const [showHeart, setShowHeart] = useState(false);
+  const [showModal, setShowModal] = useState(false);
   const heartRef = useRef(null);
   const [angles, setAngles] = useState(initialAngles);
   const animationRef = useRef(null);
@@ -74,9 +80,7 @@ function Main() {
     if (textTimeoutRef.current) {
       clearTimeout(textTimeoutRef.current);
     }
-
     setShowText(true);
-
     textTimeoutRef.current = setTimeout(() => {
       setShowText(false);
       textTimeoutRef.current = null;
@@ -87,6 +91,8 @@ function Main() {
     if (heartRef.current) {
       heartRef.current.start();
     }
+    setShowHeart(true);
+    setShowModal(false);
 
     setTimeout(() => {
       setUnderText(true);
@@ -97,9 +103,45 @@ function Main() {
     }, 8000);
   };
 
+  const handleEarsClick = () => {
+    setShowModal(!showModal);
+  };
+
   return (
     <div className={mainStyle.main}>
       {showText && <div className={mainStyle.floatingText}>murrrrr &lt;3</div>}
+      {showModal && (
+        <>
+          <div className={mainStyle.floatingBlock}>
+            <span className={mainStyle.title}>Ежедневное напоминание</span>
+            <section className={mainStyle.secP}>
+              <p>Ты НЕПРИЛИЧНО ДОРОГОЙ подарок в моей жизни😘</p>
+              <p>У тебя очень красивая улыбка!!! Улыбнись, мяу:)</p>
+            </section>
+            <img src={rom} height={20} className={mainStyle.rom1} />
+            <img src={rom} height={20} className={mainStyle.rom2} />
+            <img src={rose} height={20} className={mainStyle.rose1} />
+            <img src={rose} height={20} className={mainStyle.rose2} />
+
+            <div></div>
+          </div>
+          <img
+            src={paw}
+            height={75}
+            onClick={handleEarsClick}
+            className={mainStyle.exit}
+          />
+        </>
+      )}
+      {!showModal && (
+        <img
+          src={ears}
+          height={100}
+          className={showHeart ? mainStyle.iconEarsDis : mainStyle.iconEars}
+          alt="murrr :*"
+          onClick={handleEarsClick}
+        />
+      )}
       <div className={mainStyle.hearts}>
         {coords.map((coord, i) => (
           <div
@@ -127,7 +169,11 @@ function Main() {
           </span>
           <section className={mainStyle.inner_block}>
             <div className={mainStyle.main_yes}>
-              <Button content={"Да"} onClick={handleYesClick}>
+              <Button
+                content={"Да"}
+                onClick={handleYesClick}
+                disabled={showHeart}
+              >
                 <div className={mainStyle.hidden}>
                   {numOfEmoj.map((x) => (
                     <img
@@ -142,7 +188,7 @@ function Main() {
               </Button>
             </div>
             <div className={mainStyle.main_no}>
-              <Button content={"Нет"} />
+              <Button content={"Нет"} disabled={showHeart} />
             </div>
           </section>
         </div>

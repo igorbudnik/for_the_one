@@ -145,9 +145,9 @@
   left: 50%;
   bottom: 0;
   font-family: "FriendlySans";
-  transform: translateX(-50%) translateY(0);
   opacity: 0;
-  font-size: 45px;
+  transform: translateX(-50%) translateY(0);
+  font-size: 20px;
   font-weight: 600;
   color: #ff0000;
   pointer-events: none;
@@ -169,4 +169,152 @@
 
 .hearts {
   position: absolute;
+}
+
+.floatingBlock {
+  position: fixed;
+  height: 100px;
+  width: 100px;
+  background-color: aqua;
+  left: 50px;
+  bottom: 0;
+  font-family: "FriendlySans";
+  transform: translateX(-50%) translateY(0);
+  opacity: 0;
+  font-size: 4px;
+  text-align: center;
+  font-weight: 600;
+  pointer-events: none;
+  z-index: 100000;
+
+  display: flex;
+  border-radius: 10px;
+
+  background: radial-gradient(circle, #ffebeb, #fd8e8e);
+
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  -webkit-box-shadow: 19px 19px 8px 0px rgba(34, 60, 80, 0.2);
+  -moz-box-shadow: 19px 19px 8px 0px rgba(34, 60, 80, 0.2);
+  box-shadow: 19px 19px 8px 0px rgba(34, 60, 80, 0.2);
+
+  animation: floatUp 2s forwards ease-out;
+}
+
+.rom1 {
+  position: absolute;
+  top: 3px;
+  right: 0;
+  animation: rotateFlower 3s forwards ease-out infinite;
+}
+
+.rom2 {
+  position: absolute;
+  bottom: 3px;
+  left: 0;
+  animation: rotateFlower 3s forwards ease-out infinite;
+}
+.rose1 {
+  position: absolute;
+  top: 3px;
+  left: 0;
+  animation: rotateFlower 3s forwards ease-out infinite;
+}
+.rose2 {
+  position: absolute;
+  bottom: 3px;
+  right: 0;
+  animation: rotateFlower 3s forwards ease-out infinite;
+}
+
+.secP {
+  position: relative;
+  width: 50px;
+  bottom: -10px;
+  font-weight: lighter;
+}
+
+@keyframes rotateFlower {
+  0%,
+  100% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(15deg);
+  }
+}
+
+.title {
+  position: absolute;
+  top: 5px;
+  font-size: 7px;
+}
+
+@keyframes floatUp {
+  0% {
+    transform: translateX(0%);
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.3;
+  }
+  100% {
+    transform: translateX(20vh) translateY(-50vh) scale(4);
+    opacity: 1;
+  }
+}
+
+.iconEars {
+  position: fixed;
+  cursor: pointer;
+  bottom: 0;
+  left: 0;
+  animation: moveUpDown 3s forwards ease-out infinite;
+}
+
+.iconEarsDis {
+  position: fixed;
+  pointer-events: none;
+  bottom: 0;
+  left: 0;
+  animation: moveUpDown 3s forwards ease-out infinite;
+}
+
+@keyframes moveUpDown {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(20px);
+  }
+}
+@keyframes moveDown {
+  0% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(20px);
+  }
+}
+
+.exit {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  cursor: pointer;
+  z-index: 100;
+
+  animation: scalePaw 2s forwards ease-out infinite;
+}
+
+@keyframes scalePaw {
+  0%,
+  100% {
+    transform: scale(1.2);
+  }
+  50% {
+    transform: scale(1);
+  }
 }

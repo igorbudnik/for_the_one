@@ -4,7 +4,7 @@ import buttonStyle from "./Button.module.css";
 let globalState = 0;
 const subscribers = new Set();
 
-const Button = ({ onClick, children, content }) => {
+const Button = ({ onClick, children, content, disabled }) => {
   const [state, setLocalState] = useState(globalState);
 
   useEffect(() => {
@@ -73,6 +73,7 @@ const Button = ({ onClick, children, content }) => {
       }}
       className={isYes ? buttonStyle.button_yes : buttonStyle.button_no}
       onClick={handleClick}
+      disabled={disabled}
     >
       <div className={buttonStyle.content}>
         {content === "Да" && state === 3 ? "Конечно!!!" : content}
