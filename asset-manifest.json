@@ -1,8 +1,13 @@
 {
   "files": {
-    "main.css": "./static/css/main.4a57accc.css",
-    "main.js": "./static/js/main.c5a45ac3.js",
+    "main.css": "./static/css/main.ded30793.css",
+    "main.js": "./static/js/main.3f7f4386.js",
     "static/js/453.dde76d10.chunk.js": "./static/js/453.dde76d10.chunk.js",
+    "static/media/fifth.png": "./static/media/fifth.ac1da66ca4ce4bd30cd9.png",
+    "static/media/third.png": "./static/media/third.77a4fe3bf88d6086a6e4.png",
+    "static/media/first.png": "./static/media/first.20b5f8f24025734770ee.png",
+    "static/media/second.png": "./static/media/second.068da93e5fb758885adc.png",
+    "static/media/forth.png": "./static/media/forth.3405b62a61eaea7553d0.png",
     "static/media/Sigmar-Regular.otf": "./static/media/Sigmar-Regular.db901cf60531d941f953.otf",
     "static/media/murzik.jpg": "./static/media/murzik.d76ca03dd788691cb5c0.jpg",
     "static/media/me.jpg": "./static/media/me.79fe4b181e3572ee54b4.jpg",
@@ -17,12 +22,12 @@
     "static/media/rose.png": "./static/media/rose.d0c28bc661d1760bc88f.png",
     "static/media/paw.png": "./static/media/paw.ab6bed5332f5659fd0e7.png",
     "index.html": "./index.html",
-    "main.4a57accc.css.map": "./static/css/main.4a57accc.css.map",
-    "main.c5a45ac3.js.map": "./static/js/main.c5a45ac3.js.map",
+    "main.ded30793.css.map": "./static/css/main.ded30793.css.map",
+    "main.3f7f4386.js.map": "./static/js/main.3f7f4386.js.map",
     "453.dde76d10.chunk.js.map": "./static/js/453.dde76d10.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.4a57accc.css",
-    "static/js/main.c5a45ac3.js"
+    "static/css/main.ded30793.css",
+    "static/js/main.3f7f4386.js"
   ]
 }
