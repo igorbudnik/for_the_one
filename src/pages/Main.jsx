@@ -152,7 +152,23 @@ function Main() {
               bottom: `${coord.y}px`,
             }}
           >
-            <Heart angle={angles[i]} src={urls[i]} onClick={handleHeartClick} />
+            {i === 1 ? (
+              <>
+                <div className={mainStyle.lunaBlock}>
+                  <span className={mainStyle.titleLuna}>
+                    Мяу, <b>Мамочка</b>, иди сюда!!!
+                  </span>
+                </div>
+                <div className={mainStyle.circle1}></div>
+                <div className={mainStyle.circle2}></div>
+                <div className={mainStyle.circle3}></div>
+              </>
+            ) : null}
+            <Heart
+              angle={angles[i]}
+              src={urls[i]}
+              onClick={i === 1 ? () => navigate("/collage") : handleHeartClick}
+            />
           </div>
         ))}
       </div>
